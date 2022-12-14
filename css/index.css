@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100%;
+  background-color: #8d1c3d;
+  font-family: 'Oswald', sans-serif; }
+  @media (max-width: 763px) {
+    body {
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 5fr; } }
+  body aside {
+    background-color: #8d1c3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px; }
+    body aside .brand {
+      text-align: center;
+      color: #8d1c3d;
+      background-color: #FEFCF3;
+      padding: 10px; }
+      @media (max-width: 763px) {
+        body aside .brand {
+          margin-bottom: 30px; } }
+    body aside .menu-ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body aside .menu-ul .menu-li {
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+        color: #FEFCF3;
+        list-style-type: none;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 30px;
+        cursor: pointer;
+        width: 100%; }
+        body aside .menu-ul .menu-li i {
+          margin-right: 10px;
+          font-size: 25px; }
+        body aside .menu-ul .menu-li:nth-child(1) {
+          background-color: #FEFCF3;
+          color: #8d1c3d;
+          border-radius: 10px; }
+    body aside footer {
+      text-align: center;
+      color: #FEFCF3; }
+      @media (max-width: 763px) {
+        body aside footer {
+          display: none; } }
+      body aside footer span {
+        font-size: 20px; }
+      body aside footer .github-link i {
+        margin-left: 10px;
+        font-size: 25px;
+        color: #FEFCF3; }
+  body main {
+    background-color: #FEFCF3;
+    border-radius: 100px 0px 0px 100px;
+    padding: 50px;
+    overflow-y: scroll; }
+    @media (max-width: 763px) {
+      body main {
+        border-radius: 0px; } }
+    body main .section-title {
+      color: #8d1c3d;
+      font-size: 50px; }
+      @media (max-width: 763px) {
+        body main .section-title {
+          text-align: center; } }
+    body main .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      body main .products-container .product {
+        padding: 30px;
+        margin: 20px;
+        border-radius: 30px;
+        background-color: #8d1c3d;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        body main .products-container .product .product-name, body main .products-container .product .product-price {
+          color: #FEFCF3;
+          font-size: 30px;
+          margin-bottom: 10px;
+          font-weight: 600; }
+        body main .products-container .product .product-img {
+          min-width: 100%;
+          margin-bottom: 30px; }
+        body main .products-container .product .addtocart-btn {
+          border: none;
+          background-color: #FEFCF3;
+          color: #8d1c3d;
+          font-family: 'Oswald', sans-serif;
+          font-size: 30px;
+          font-weight: 600;
+          padding: 10px;
+          border-radius: 20px;
+          transition: 0.3s transform;
+          cursor: pointer; }
+          body main .products-container .product .addtocart-btn:hover {
+            transform: scale(1.1); }

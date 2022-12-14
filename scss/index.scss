@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+$primary: #FEFCF3;
+$secondary: #8d1c3d;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100%;
+    background-color: $secondary;
+    font-family: 'Oswald', sans-serif;
+    @media (max-width: 763px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 5fr;
+    }
+    aside {
+        background-color: $secondary;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        .brand {
+            text-align: center;
+            color: $secondary;
+            background-color: $primary;
+            padding: 10px;
+            @media (max-width: 763px) {
+                margin-bottom: 30px;
+            }
+        }
+        .menu-ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .menu-li {
+                font-family: 'Oswald', sans-serif;
+                font-size: 30px;
+                color: $primary;
+                list-style-type: none;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 30px;
+                cursor: pointer;
+                width: 100%;
+                i {
+                    margin-right: 10px;
+                    font-size: 25px;
+                }
+                &:nth-child(1) {
+                    background-color: $primary;
+                    color: $secondary;
+                    border-radius: 10px;
+                }
+            }
+        }
+        footer {
+            text-align: center;
+            color: $primary;
+            @media (max-width: 763px) {
+                display: none;
+            }
+            span {
+                font-size: 20px;
+            }
+            .github-link {
+                i {
+                    margin-left: 10px;
+                    font-size: 25px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+    main {
+        background-color: $primary;
+        border-radius: 100px 0px 0px 100px;
+        padding: 50px;
+        overflow-y: scroll;
+        @media (max-width: 763px) {
+            border-radius: 0px;
+        }
+        .section-title {
+            color: $secondary;
+            font-size: 50px;
+            @media (max-width: 763px) {
+                text-align: center;
+            }
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .product {
+                padding: 30px;
+                margin: 20px;
+                border-radius: 30px;
+                background-color: $secondary;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .product-name, .product-price {
+                    color: $primary;
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                }
+                .product-img {
+                    min-width: 100%;
+                    margin-bottom: 30px;
+                }
+                .addtocart-btn {
+                    border: none;
+                    background-color: $primary;
+                    color: $secondary;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 30px;
+                    font-weight: 600;
+                    padding: 10px;
+                    border-radius: 20px;
+                    transition: 0.3s transform;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
