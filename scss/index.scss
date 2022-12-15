@@ -24,7 +24,7 @@ body {
     font-family: 'Oswald', sans-serif;
     @media (max-width: 763px) {
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 5fr;
+        grid-template-rows: 1fr 2fr;
     }
     aside {
         background-color: $secondary;
@@ -32,6 +32,9 @@ body {
         flex-direction: column;
         justify-content: space-between;
         padding: 15px;
+        @media (max-width: 763px) {
+            height: fit-content;
+        }
         .brand {
             text-align: center;
             color: $secondary;
@@ -53,9 +56,12 @@ body {
                 list-style-type: none;
                 text-align: center;
                 font-weight: 600;
-                margin-bottom: 30px;
+                margin-bottom: 25px;
                 cursor: pointer;
                 width: 100%;
+                &:nth-child(4) {
+                    margin-bottom: 0px;
+                }
                 i {
                     margin-right: 10px;
                     font-size: 25px;
@@ -87,11 +93,16 @@ body {
     }
     main {
         background-color: $primary;
-        border-radius: 100px 0px 0px 100px;
-        padding: 50px;
+        border-radius: 50px 50px 50px 50px;
+        padding: 40px;
         overflow-y: scroll;
+        margin: 20px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
         @media (max-width: 763px) {
             border-radius: 0px;
+            margin: 0px;
         }
         .section-title {
             color: $secondary;
@@ -120,7 +131,6 @@ body {
                     font-weight: 600;
                 }
                 .product-img {
-                    min-width: 100%;
                     margin-bottom: 30px;
                 }
                 .addtocart-btn {
