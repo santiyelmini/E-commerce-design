@@ -46,7 +46,8 @@ body {
         font-weight: 600;
         margin-bottom: 25px;
         cursor: pointer;
-        width: 100%; }
+        width: 100%;
+        border-radius: 10px; }
         body aside .menu-ul .menu-li:nth-child(4) {
           margin-bottom: 0px; }
         body aside .menu-ul .menu-li i {
@@ -54,21 +55,14 @@ body {
           font-size: 25px; }
         body aside .menu-ul .menu-li:nth-child(1) {
           background-color: #FEFCF3;
-          color: #8d1c3d;
-          border-radius: 10px; }
-    body aside footer {
+          color: #8d1c3d; }
+    body aside .fifa-watermark {
       text-align: center;
-      color: #FEFCF3; }
+      color: #FEFCF3;
+      font-size: 20px; }
       @media (max-width: 763px) {
-        body aside footer {
+        body aside .fifa-watermark {
           display: none; } }
-      body aside footer span {
-        font-size: 20px; }
-      body aside footer .github-link i {
-        margin-left: 10px;
-        font-size: 25px;
-        color: #FEFCF3;
-        margin-top: 10px; }
   body main {
     background-color: #FEFCF3;
     border-radius: 50px 50px 50px 50px;
@@ -118,7 +112,24 @@ body {
           font-weight: 600;
           padding: 10px;
           border-radius: 20px;
-          transition: 0.3s transform;
+          transition: 0.5s transform;
           cursor: pointer; }
+          body main .products-container .product .addtocart-btn .fa-cart-shopping {
+            display: none; }
+          body main .products-container .product .addtocart-btn:hover .fa-cart-shopping {
+            display: inline;
+            margin-right: 5px; }
           body main .products-container .product .addtocart-btn:hover {
-            transform: scale(1.1); }
+            transform: scale(1.05); }
+  body footer {
+    display: none; }
+    @media (max-width: 763px) {
+      body footer {
+        display: flex;
+        background-color: #8d1c3d;
+        height: 100px;
+        justify-content: center;
+        align-items: center; }
+        body footer span {
+          color: #FEFCF3;
+          font-size: 25px; } }

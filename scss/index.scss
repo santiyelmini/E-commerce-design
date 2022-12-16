@@ -56,6 +56,7 @@ body {
                 margin-bottom: 25px;
                 cursor: pointer;
                 width: 100%;
+                border-radius: 10px;
                 &:nth-child(4) {
                     margin-bottom: 0px;
                 }
@@ -66,26 +67,15 @@ body {
                 &:nth-child(1) {
                     background-color: $primary;
                     color: $secondary;
-                    border-radius: 10px;
                 }
             }
         }
-        footer {
+        .fifa-watermark {
             text-align: center;
             color: $primary;
+            font-size: 20px;
             @media (max-width: 763px) {
                 display: none;
-            }
-            span {
-                font-size: 20px;
-            }
-            .github-link {
-                i {
-                    margin-left: 10px;
-                    font-size: 25px;
-                    color: $primary;
-                    margin-top: 10px;
-                }
             }
         }
     }
@@ -142,12 +132,35 @@ body {
                     font-weight: 600;
                     padding: 10px;
                     border-radius: 20px;
-                    transition: 0.3s transform;
+                    transition: 0.5s transform;
                     cursor: pointer;
+                    .fa-cart-shopping {
+                        display: none;
+                    }
                     &:hover {
-                        transform: scale(1.1);
+                        .fa-cart-shopping {
+                            display: inline;
+                            margin-right: 5px;
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.05);
                     }
                 }
+            }
+        }
+    }
+    footer {
+        display: none;
+        @media (max-width: 763px) {
+            display: flex;
+            background-color: $secondary;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            span {
+                color: $primary;
+                font-size:25px;
             }
         }
     }
