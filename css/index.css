@@ -24,9 +24,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 15px; }
-    @media (max-width: 763px) {
-      body aside {
-        height: fit-content; } }
     body aside .brand {
       text-align: center;
       color: #8d1c3d;
@@ -70,7 +67,8 @@ body {
       body aside footer .github-link i {
         margin-left: 10px;
         font-size: 25px;
-        color: #FEFCF3; }
+        color: #FEFCF3;
+        margin-top: 10px; }
   body main {
     background-color: #FEFCF3;
     border-radius: 50px 50px 50px 50px;
@@ -82,7 +80,8 @@ body {
     @media (max-width: 763px) {
       body main {
         border-radius: 0px;
-        margin: 0px; } }
+        margin: 0px;
+        overflow-y: unset; } }
     body main .section-title {
       color: #8d1c3d;
       font-size: 50px; }
@@ -97,13 +96,14 @@ body {
         padding: 30px;
         margin: 20px;
         border-radius: 30px;
-        background-color: #8d1c3d;
+        background-color: #FEFCF3;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        border: 5px solid #8d1c3d; }
         body main .products-container .product .product-name, body main .products-container .product .product-price {
-          color: #FEFCF3;
+          color: #8d1c3d;
           font-size: 30px;
           margin-bottom: 10px;
           font-weight: 600; }
@@ -111,8 +111,8 @@ body {
           margin-bottom: 30px; }
         body main .products-container .product .addtocart-btn {
           border: none;
-          background-color: #FEFCF3;
-          color: #8d1c3d;
+          background-color: #8d1c3d;
+          color: #FEFCF3;
           font-family: 'Oswald', sans-serif;
           font-size: 30px;
           font-weight: 600;

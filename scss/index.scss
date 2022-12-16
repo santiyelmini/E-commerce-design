@@ -32,9 +32,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         padding: 15px;
-        @media (max-width: 763px) {
-            height: fit-content;
-        }
         .brand {
             text-align: center;
             color: $secondary;
@@ -87,6 +84,7 @@ body {
                     margin-left: 10px;
                     font-size: 25px;
                     color: $primary;
+                    margin-top: 10px;
                 }
             }
         }
@@ -103,6 +101,7 @@ body {
         @media (max-width: 763px) {
             border-radius: 0px;
             margin: 0px;
+            overflow-y: unset;
         }
         .section-title {
             color: $secondary;
@@ -119,13 +118,14 @@ body {
                 padding: 30px;
                 margin: 20px;
                 border-radius: 30px;
-                background-color: $secondary;
+                background-color: $primary;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                border: 5px solid $secondary;
                 .product-name, .product-price {
-                    color: $primary;
+                    color: $secondary;
                     font-size: 30px;
                     margin-bottom: 10px;
                     font-weight: 600;
@@ -135,8 +135,8 @@ body {
                 }
                 .addtocart-btn {
                     border: none;
-                    background-color: $primary;
-                    color: $secondary;
+                    background-color: $secondary;
+                    color: $primary;
                     font-family: 'Oswald', sans-serif;
                     font-size: 30px;
                     font-weight: 600;
