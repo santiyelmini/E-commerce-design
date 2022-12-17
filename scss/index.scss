@@ -57,16 +57,18 @@ body {
                 cursor: pointer;
                 width: 100%;
                 border-radius: 10px;
-                &:nth-child(4) {
-                    margin-bottom: 0px;
-                }
-                i {
-                    margin-right: 10px;
-                    font-size: 25px;
+                transition: 0.5s color;
+                &:hover {
+                    background-color: $primary;
+                    color: $secondary;
                 }
                 &:nth-child(1) {
                     background-color: $primary;
                     color: $secondary;
+                }
+                i {
+                    margin-right: 10px;
+                    font-size: 25px;
                 }
             }
         }

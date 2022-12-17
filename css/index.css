@@ -47,15 +47,17 @@ body {
         margin-bottom: 25px;
         cursor: pointer;
         width: 100%;
-        border-radius: 10px; }
-        body aside .menu-ul .menu-li:nth-child(4) {
-          margin-bottom: 0px; }
-        body aside .menu-ul .menu-li i {
-          margin-right: 10px;
-          font-size: 25px; }
+        border-radius: 10px;
+        transition: 0.5s color; }
+        body aside .menu-ul .menu-li:hover {
+          background-color: #FEFCF3;
+          color: #8d1c3d; }
         body aside .menu-ul .menu-li:nth-child(1) {
           background-color: #FEFCF3;
           color: #8d1c3d; }
+        body aside .menu-ul .menu-li i {
+          margin-right: 10px;
+          font-size: 25px; }
     body aside .fifa-watermark {
       text-align: center;
       color: #FEFCF3;
